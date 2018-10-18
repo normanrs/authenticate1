@@ -1,0 +1,9 @@
+<h1>Enter new user information</h1>
+<hr>
+<%= form_for @user do |f| %>
+  First name: <%= f.text_field :firstname %><br />
+  Last name : <%= f.text_field :lastname %><br />
+  Email     : <%= f.text_field :email %><br />
+  Password  : <%= f.text_field :password %><br />
+  <%= f.submit %>
+<% end %>
